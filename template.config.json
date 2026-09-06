@@ -1,0 +1,29 @@
+{
+  "v": 1,
+  "slug": "parcy-dice-grove",
+  "name": "Parcy~Dice Bird of Paradise Garden",
+  "description": "A warm community botanical-garden template built around the Bird of Paradise (Strelitzia), with a deep grove-green and cream palette, Strelitzia-orange accents, Fraunces display serif, and SVG-only art. Features a cycling garden-feed ribbon with live clock, a hero with a live grower counter and stylized bloom emblem, a collection grid of four Strelitzia varieties with bloom-season and rarity badges, animated count-up statistics, and a conservation-focused plant-care checklist centerpiece with four persisted lists and overall progress. Includes a fully validated 'Join the Grove' signup flow with loading, success, and duplicate-email states plus a persisted grower counter, garden helpline cards, share tools, scroll-reveal animations, mobile drawer navigation, reduced-motion support, and complete data-fws-slot content annotations.",
+  "category": "nonprofit.environment",
+  "slot_schema_version": 1,
+  "author": {
+    "name": "Aryan",
+    "handle": "Aa11rn",
+    "url": "https://github.com/Aa11rn"
+  },
+  "tags": ["garden", "plants", "strelitzia", "bird-of-paradise", "conservation", "checklist", "nursery", "environment", "nonprofit", "responsive", "green", "signup"],
+  "features": [
+    "cycling garden-feed ribbon with live clock, pause, and dismiss",
+    "sticky navigation with Join-the-Grove CTA and mobile drawer",
+    "hero with live grower counter, bloom-season status chip, and Strelitzia emblem",
+    "collection grid of four Bird of Paradise varieties with rarity badges",
+    "animated count-up statistics band",
+    "conservation care-checklist centerpiece with four persisted lists and overall progress",
+    "validated Join-the-Grove signup with loading, success, and duplicate-error states",
+    "persisted grower counter with social-proof avatar stack",
+    "garden helpline cards and share tools",
+    "scroll-reveal animations with reduced-motion support",
+    "toast notifications, mobile CTA bar, and back-to-top",
+    "fully customizable content via data-fws-slot attributes"
+  ],
+  "license": "MIT"
+}
