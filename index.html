@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-fws-slot="business.name">Parcy~Dice | Bird of Paradise Garden</title>
+  <meta name="description" data-fws-slot="campaign.description" content="Parcy~Dice is a community garden built around the Bird of Paradise flower. Learn the four varieties, keep one alive with our care checklist, and join the grove for watering-time reminders." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script>
+    window.tailwind = window.tailwind || {};
+    (function () {
+      var __fwsCss = document.createElement('style');
+      __fwsCss.textContent = `
+        :root{
+          --bg:#0a1a12;--bg-deep:#05130c;--surface:#14301f;--surface2:#102719;--surface3:#0c2014;
+          --sun:#ff8a3d;--sun-dim:rgba(255,138,61,0.14);
+          --bloom:#3a7bd5;--bloom-dim:rgba(58,123,213,0.16);
+          --gold:#ffc24d;--gold-dim:rgba(255,194,77,0.14);
+          --leaf:#7fd08a;--leaf-dim:rgba(127,208,138,0.14);
+          --red:#e8624f;--red-dim:rgba(232,98,79,0.16);
+          --cream:#f3ead8;--muted:#a9b8a2;--dim:#6f8a74;
+          --line:rgba(163,190,159,0.14);--line-soft:rgba(163,190,159,0.08);
+          --disp:'Fraunces',Georgia,serif;--body:'Inter',Arial,sans-serif;--mono:'Space Mono',monospace;
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--body);background:var(--bg);color:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+        a{color:inherit;text-decoration:none}
+        button{font-family:inherit;cursor:pointer}
+        section{scroll-margin-top:76px}
+        .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+        .mono{font-family:var(--mono)}
+        .kicker{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:0.72rem;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:var(--sun);margin-bottom:16px}
+        .kicker::before{content:'';width:26px;height:2px;background:var(--sun)}
+
+        /* ---------- BLOOMBOARD RIBBON ---------- */
+        .ribbon{background:var(--bg-deep);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+        .ribbon-inner{display:flex;align-items:center;gap:16px;padding:10px 24px;max-width:1180px;margin:0 auto}
+        .ribbon-label{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:0.68rem;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+        .pulse-dot{width:9px;height:9px;border-radius:50%;background:var(--gold);position:relative;flex-shrink:0}
+        .pulse-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--gold);animation:radarPing 1.8s cubic-bezier(0,0,0.2,1) infinite}
+        @keyframes radarPing{0%{transform:scale(0.5);opacity:1}80%,100%{transform:scale(1.6);opacity:0}}
+        .ribbon-msg{font-size:0.82rem;color:var(--cream);display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap}
+        .ribbon-msg span{display:inline-flex;gap:10px;align-items:center;transition:opacity 0.3s}
+        .ribbon-msg .sep{color:var(--dim);opacity:0.6}
+        .ribbon-controls{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
+        .ribbon-time{font-family:var(--mono);font-size:0.66rem;color:var(--dim)}
+        .ribbon-btn{background:none;border:1px solid var(--line);color:var(--muted);width:28px;height:28px;border-radius:7px;font-size:0.95rem;line-height:1;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+        .ribbon-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ---------- NAV ---------- */
+        .nav{position:sticky;top:0;z-index:200;background:rgba(10,26,18,0.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+        .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+        .logo{display:flex;align-items:center;gap:11px;font-family:var(--disp);font-weight:700;font-size:1.18rem;letter-spacing:0.01em}
+        .logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--sun),var(--bloom));display:flex;align-items:center;justify-content:center;flex-shrink:0}
+        .logo-mark svg{width:20px;height:20px;stroke:#06130c}
+        .logo em{font-style:italic;color:var(--sun)}
+        .nav-links{display:flex;gap:30px;list-style:none}
+        .nav-links a{font-size:0.78rem;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted);transition:color 0.2s;padding:6px 0;position:relative}
+        .nav-links a:hover{color:var(--cream)}
+        .nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--sun);transition:width 0.25s}
+        .nav-links a:hover::after{width:100%}
+        .nav-cta{display:flex;align-items:center;gap:12px}
+        .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--disp);font-weight:700;font-size:0.78rem;letter-spacing:1px;text-transform:uppercase;padding:12px 22px;border-radius:var(--radius-sm);border:none;cursor:pointer;transition:all 0.22s;text-align:center}
+        :root{--radius:14px;--radius-sm:10px}
+        .btn-sun{background:var(--sun);color:#2b1505}
+        .btn-sun:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,138,61,0.28)}
+        .btn-bloom{background:var(--bloom);color:#06131f}
+        .btn-bloom:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(58,123,213,0.3)}
+        .btn-ghost{background:transparent;color:var(--cream);border:1px solid var(--line)}
+        .btn-ghost:hover{border-color:var(--sun);color:var(--sun)}
+        .btn-sm{padding:10px 18px;font-size:0.72rem}
+        .burger{display:none;background:none;border:1px solid var(--line);width:42px;height:42px;border-radius:10px;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+        .burger span{display:block;width:22px;height:2px;background:var(--cream);transition:all 0.3s}
+        .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+        .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+        .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+        /* ---------- HERO ---------- */
+        .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+        .hero-leafgrid{position:absolute;inset:0;background:
+          linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
+          background-size:56px 56px;mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,black,transparent);-webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,black,transparent)}
+        .hero-halo{position:absolute;right:-160px;top:-160px;width:640px;height:640px;border-radius:50%;border:1px solid var(--line);pointer-events:none}
+        .hero-halo::before,.hero-halo::after{content:'';position:absolute;inset:18%;border:1px solid var(--line)}
+        .hero-halo::after{inset:34%}
+        .hero-halo.soft{width:180px;height:180px;right:80px;top:120px;border:1px solid rgba(255,194,77,0.25)}
+        .hero-halo.soft::before{content:'';position:absolute;inset:0;border-radius:inherit;background:conic-gradient(from 0deg,rgba(255,194,77,0.4),transparent 22%,transparent 100%);animation:spin 4s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .hero-emblem{position:absolute;right:9%;top:50%;transform:translateY(-50%);width:230px;opacity:0.9;pointer-events:none;animation:float 6s ease-in-out infinite}
+        .hero-emblem svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,0.45))}
+        @keyframes float{0%,100%{transform:translateY(-50%)}50%{transform:translateY(-40%)}}
+        .hero-inner{position:relative;z-index:2;padding:96px 0 100px}
+        .status-chip{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line);background:var(--surface3);border-radius:999px;padding:9px 18px 9px 12px;margin-bottom:26px}
+        .status-badge{font-family:var(--mono);font-size:0.68rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+        .status-badge.good{background:var(--leaf-dim);color:var(--leaf);border:1px solid rgba(127,208,138,0.5)}
+        .status-chip .mono-text{font-family:var(--mono);font-size:0.72rem;color:var(--muted)}
+        .hero h1{font-family:var(--disp);font-weight:700;font-size:clamp(2.7rem,6.6vw,4.8rem);line-height:1.02;letter-spacing:-0.01em;text-transform:uppercase;max-width:880px}
+        .hero h1 em{font-style:italic;color:var(--sun)}
+        .hero-sub{max-width:540px;margin-top:24px;font-size:1.05rem;color:var(--muted);font-weight:400}
+        .hero-actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+        .hero-counter{display:inline-flex;align-items:center;gap:10px;margin-top:34px;font-family:var(--mono);font-size:0.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 18px;background:var(--surface3)}
+        .hero-counter strong{color:var(--sun);font-weight:700}
+
+        /* ---------- SECTIONS ---------- */
+        .sec{padding:96px 0}
+        .sec-head{max-width:720px;margin-bottom:48px}
+        .sec-head h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.9rem,4vw,3rem);line-height:1.05;text-transform:uppercase;letter-spacing:-0.01em}
+        .sec-head h2 em{font-style:italic;color:var(--sun)}
+        .sec-head p{margin-top:16px;color:var(--muted);font-size:1rem}
+        .sec-head.mid{margin-left:auto;margin-right:auto;text-align:center}
+        .accent-gold{color:var(--gold)}
+
+        /* ---------- COLLECTION ---------- */
+        .v-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+        .vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;gap:12px;transition:transform 0.25s,border-color 0.25s;position:relative;overflow:hidden}
+        .vcard:hover{transform:translateY(-4px);border-color:var(--sun)}
+        .vcard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--vc,var(--sun))}
+        .v-ico{width:52px;height:52px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:var(--vcd,var(--sun-dim));color:var(--vc,var(--sun))}
+        .v-ico svg{width:26px;height:26px}
+        .v-tag{font-family:var(--mono);font-size:0.62rem;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 11px;border-radius:999px;align-self:flex-start}
+        .v-tag.gold{background:var(--gold-dim);color:var(--gold)}
+        .v-tag.leaf{background:var(--leaf-dim);color:var(--leaf)}
+        .v-tag.sun{background:var(--sun-dim);color:var(--sun)}
+        .v-tag.bloom{background:var(--bloom-dim);color:#83b3f5}
+        .v-name{font-family:var(--disp);font-weight:700;font-size:1.14rem;text-transform:uppercase;letter-spacing:0.01em;line-height:1.15}
+        .v-meta{font-family:var(--mono);font-size:0.66rem;letter-spacing:1px;text-transform:uppercase;color:var(--dim);display:flex;gap:14px;flex-wrap:wrap}
+        .v-meta b{color:var(--leaf);font-weight:700}
+        .v-desc{font-size:0.86rem;color:var(--muted);line-height:1.55}
+        .vcard .link{font-family:var(--mono);font-size:0.68rem;letter-spacing:1.1px;text-transform:uppercase;color:var(--sun);margin-top:auto;display:inline-flex;align-items:center;gap:7px;transition:gap 0.2s}
+        .vcard .link:hover{gap:13px}
+
+        /* ---------- STORY STRIP ---------- */
+        .story-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-deep)}
+        .story-row{display:grid;grid-template-columns:88px 1fr;gap:26px;padding:44px 0;border-bottom:1px solid var(--line-soft);align-items:start}
+        .story-row:last-child{border-bottom:none}
+        .story-ico{width:68px;height:68px;border-radius:18px;background:var(--surface3);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--sun)}
+        .story-ico.bloom{color:var(--bloom)}
+        .story-ico.gold{color:var(--gold)}
+        .story-ico svg{width:30px;height:30px}
+        .story-row h3{font-family:var(--disp);font-weight:700;font-size:1.4rem;text-transform:uppercase;letter-spacing:0.2px;margin-bottom:8px}
+        .story-row h3 span{color:var(--sun)}
+        .story-row p{color:var(--muted);max-width:560px;font-size:0.95rem}
+
+        /* ---------- STATS ---------- */
+        .stats-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-deep)}
+        .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+        .stat-cell{padding:48px 30px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+        .stat-cell:first-child{border-left:none}
+        .stat-num{font-family:var(--mono);font-weight:700;font-size:clamp(1.9rem,3.6vw,2.7rem);color:var(--sun);line-height:1;letter-spacing:-1px}
+        .stat-label{font-size:0.84rem;color:var(--muted);max-width:240px}
+        .stat-unit{font-family:var(--mono);font-weight:400;font-size:0.9em;color:var(--gold)}
+
+        /* ---------- CHECKLISTS ---------- */
+        .checklists{max-width:820px;margin:0 auto}
+        .overall-progress{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:22px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+        .op-left{flex:1;min-width:220px}
+        .op-left h3{font-family:var(--disp);font-size:1.05rem;text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px}
+        .op-left p{font-family:var(--mono);font-size:0.68rem;color:var(--dim)}
+        .op-right{display:flex;align-items:center;gap:16px;min-width:240px;flex:1}
+        .op-bar{flex:1;height:12px;background:var(--surface3);border:1px solid var(--line);border-radius:999px;overflow:hidden}
+        .op-fill{height:100%;width:0;background:linear-gradient(90deg,var(--sun),var(--bloom));border-radius:999px;transition:width 0.5s ease}
+        .op-pct{font-family:var(--mono);font-weight:700;font-size:1.3rem;color:var(--sun);min-width:30px;text-align:right}
+        .op-reset{background:none;border:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:0.66rem;letter-spacing:1px;text-transform:uppercase;padding:9px 14px;border-radius:8px;transition:all 0.2s}
+        .op-reset:hover{color:var(--red);border-color:var(--red)}
+
+        .clist{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden;transition:border-color 0.25s}
+        .clist.open{border-color:var(--sun)}
+        .clist-head{width:100%;display:flex;align-items:center;gap:16px;padding:20px 24px;background:none;border:none;text-align:left;cursor:pointer}
+        .clist-num{font-family:var(--mono);font-size:0.72rem;color:var(--sun);min-width:34px}
+        .clist-titles{flex:1}
+        .clist-titles h3{font-family:var(--disp);font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:0.3px}
+        .clist-progress{display:flex;align-items:center;gap:12px;min-width:160px}
+        .clist-bar{flex:1;height:7px;background:var(--surface3);border-radius:999px;overflow:hidden}
+        .clist-fill{height:100%;width:0;background:var(--sun);border-radius:999px;transition:width 0.4s}
+        .clist-pct{font-family:var(--mono);font-size:0.72rem;color:var(--muted);min-width:34px;text-align:right}
+        .clist-icon{width:30px;height:30px;min-width:30px;border-radius:50%;background:var(--surface3);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;transition:all 0.3s}
+        .clist.open .clist-icon{transform:rotate(45deg);background:var(--sun);border-color:var(--sun)}
+        .clist-icon svg{width:13px;height:13px;stroke:var(--sun)}
+        .clist.open .clist-icon svg{stroke:#2b1505}
+        .clist-body{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+        .clist-items{padding:6px 24px 24px;display:grid;gap:0}
+        .clist-item{display:flex;align-items:flex-start;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line-soft);cursor:pointer}
+        .clist-item:last-child{border-bottom:none}
+        .clist-item input{appearance:none;width:21px;height:21px;min-width:21px;border:2px solid var(--line);border-radius:6px;margin-top:2px;cursor:pointer;transition:all 0.2s;position:relative;background:var(--surface3)}
+        .clist-item input:checked{background:var(--leaf);border-color:var(--leaf)}
+        .clist-item input:checked::after{content:'';position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #06130c;border-width:0 2px 2px 0;transform:rotate(45deg)}
+        .clist-item span{font-size:0.9rem;color:var(--muted);transition:color 0.2s;line-height:1.55}
+        .clist-item input:checked + span{color:var(--dim);text-decoration:line-through;text-decoration-color:rgba(169,184,162,0.5)}
+
+        /* ---------- JOIN THE GROVE ---------- */
+        .signup{background:radial-gradient(900px 420px at 85% -10%,rgba(255,138,61,0.13),transparent 60%),var(--bg-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+        .signup-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:start}
+        .signup-copy h2{font-family:var(--disp);font-weight:700;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.05;text-transform:uppercase}
+        .signup-copy h2 .row{display:block}
+        .signup-copy h2 .row em{font-style:italic;color:var(--sun)}
+        .signup-copy > p{margin-top:18px;color:var(--muted);font-size:1rem;max-width:470px}
+        .social-proof{display:flex;align-items:center;gap:14px;margin-top:30px}
+        .avatar-stack{display:flex}
+        .s-avatar{width:36px;height:36px;border-radius:50%;border:2px solid var(--bg-deep);margin-left:-9px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:0.62rem;font-weight:700;color:#06130c}
+        .s-avatar:first-child{margin-left:0}
+        .proof-text{font-size:0.8rem;color:var(--muted)}
+        .proof-text b{color:var(--sun);font-weight:700}
+        .channel-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+        .channel-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:0.66rem;letter-spacing:1px;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--surface3)}
+
+        .signup-panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:34px 32px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.5)}
+        .signup-panel::before{content:'';position:absolute;top:-1px;left:24px;right:24px;height:3px;background:linear-gradient(90deg,var(--sun),var(--gold));border-radius:0 0 3px 3px}
+        .panel-title{font-family:var(--disp);font-weight:700;font-size:1.35rem;text-transform:uppercase;letter-spacing:0.3px;margin-bottom:6px}
+        .panel-sub{font-size:0.86rem;color:var(--muted);margin-bottom:24px}
+        .field{margin-bottom:17px}
+        .field label{display:block;font-family:var(--mono);font-size:0.64rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+        .field input,.field select{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font-size:0.92rem;font-family:var(--body);color:var(--cream);background:var(--surface3);transition:border-color 0.2s,box-shadow 0.2s}
+        .field input::placeholder{color:var(--dim)}
+        .field input:focus,.field select:focus{outline:none;border-color:var(--sun);box-shadow:0 0 0 4px var(--sun-dim)}
+        .field.invalid input{border-color:var(--red);box-shadow:0 0 0 4px var(--red-dim)}
+        .field-error{display:none;font-size:0.76rem;font-weight:600;color:var(--red);margin-top:7px;font-family:var(--mono)}
+        .field.invalid .field-error{display:block}
+        .channels{display:flex;gap:16px;flex-wrap:wrap;margin:4px 0 18px}
+        .chan{display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:0.85rem;color:var(--muted)}
+        .chan input{appearance:none;width:20px;height:20px;border:2px solid var(--line);border-radius:5px;cursor:pointer;background:var(--surface3);display:grid;place-content:center;position:relative}
+        .chan input:checked{background:var(--leaf);border-color:var(--leaf)}
+        .chan input:checked::after{content:'';width:5px;height:9px;border:solid #06130c;border-width:0 2px 2px 0;transform:rotate(45deg);position:absolute;left:5px;top:1px}
+        .submit-btn{width:100%;font-size:0.85rem;padding:16px}
+        .form-alert{display:none;margin-bottom:16px;padding:12px 15px;border-radius:10px;background:var(--red-dim);border:1px solid rgba(232,98,79,0.5);color:var(--red);font-size:0.82rem;font-weight:600}
+        .form-alert.show{display:block}
+        .spinner{width:17px;height:17px;border-radius:50%;border:3px solid rgba(43,21,5,0.3);border-top-color:#2b1505;animation:spin 0.7s linear infinite;display:inline-block}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .signup-success{display:none;text-align:center;padding:20px 4px}
+        .signup-success.show{display:block;animation:fadeUp 0.45s ease}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+        .success-glow{width:74px;height:74px;border-radius:50%;background:var(--leaf-dim);border:1px solid var(--leaf);margin:0 auto 22px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px var(--leaf-dim)}
+        .success-glow svg{width:32px;height:32px;stroke:var(--leaf)}
+        .signup-success h3{font-family:var(--disp);font-weight:700;font-size:1.5rem;text-transform:uppercase;margin-bottom:10px}
+        .signup-success p{font-size:0.9rem;color:var(--muted);margin-bottom:6px}
+        .success-zone{font-family:var(--mono);font-size:0.74rem;color:var(--gold);margin:16px 0 22px;padding:12px;border:1px dashed rgba(255,194,77,0.4);border-radius:10px;background:var(--gold-dim)}
+        .reset-link{background:none;border:none;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.6px;text-transform:uppercase;color:var(--muted);text-decoration:underline;cursor:pointer}
+        .reset-link:hover{color:var(--sun)}
+
+        /* ---------- HELPLINES / SHARE ---------- */
+        .help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+        .help-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;gap:8px;transition:all 0.25s}
+        .help-card:hover{transform:translateY(-4px);border-color:var(--sun)}
+        .help-num{font-family:var(--mono);font-weight:700;font-size:1.2rem;color:var(--cream);letter-spacing:0.5px}
+        .help-kind{font-family:var(--mono);font-size:0.64rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--leaf);display:flex;align-items:center;gap:8px}
+        .help-kind::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--leaf)}
+        .help-card p{font-size:0.85rem;color:var(--muted);margin-top:4px}
+        .share-band{margin-top:46px;text-align:center;padding-top:34px;border-top:1px solid var(--line-soft)}
+        .share-btns{display:flex;justify-content:center;gap:12px;margin-top:24px;flex-wrap:wrap}
+        .share-btn{display:inline-flex;align-items:center;gap:9px;padding:11px 20px;border:1px solid var(--line);background:var(--surface3);color:var(--muted);font-family:var(--mono);font-size:0.68rem;letter-spacing:1.1px;text-transform:uppercase;border-radius:999px;cursor:pointer;transition:all 0.22s}
+        .share-btn:hover{border-color:var(--sun);color:var(--sun);transform:translateY(-2px)}
+        .share-btn.solid{background:var(--sun);border-color:var(--sun);color:#2b1505}
+        .share-btn.solid:hover{background:#ffa468;color:#2b1505}
+
+        /* ---------- FOOTER ---------- */
+        .footer{background:var(--bg-deep);border-top:1px solid var(--line);padding:60px 0 32px}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:46px}
+        .footer-brand .logo{margin-bottom:16px}
+        .footer-brand p{color:var(--dim);font-size:0.86rem;max-width:340px}
+        .footer-col h4{font-family:var(--mono);font-size:0.66rem;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--dim);margin-bottom:16px}
+        .footer-col a{display:block;color:var(--muted);font-size:0.85rem;margin-bottom:10px;transition:color 0.2s}
+        .footer-col a:hover{color:var(--sun)}
+        .footer-bottom{border-top:1px solid var(--line-soft);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:0.76rem;color:var(--dim)}
+        .footer-bottom .byline{opacity:0.75}
+        .footer-disclaimer{font-size:0.7rem;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:14px 18px;margin-top:28px;background:var(--surface3)}
+
+        /* ---------- UTILITIES ---------- */
+        .reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s ease,transform 0.7s ease}
+        .reveal.in{opacity:1;transform:none}
+        .overlay{position:fixed;inset:0;background:rgba(3,11,7,0.78);backdrop-filter:blur(5px);z-index:290;opacity:0;visibility:hidden;transition:all 0.3s}
+        .overlay.show{opacity:1;visibility:visible}
+        .toast-container{position:fixed;bottom:26px;right:26px;z-index:500;display:grid;gap:10px}
+        .toast{display:flex;align-items:center;gap:11px;background:var(--surface);color:var(--cream);font-size:0.84rem;font-weight:500;padding:13px 19px;border-radius:12px;border:1px solid var(--line);border-left:4px solid var(--leaf);box-shadow:0 18px 50px rgba(0,0,0,0.55);animation:fadeUp 0.3s ease}
+        .to-top{position:fixed;bottom:26px;left:26px;z-index:300;width:48px;height:48px;border-radius:50%;background:var(--sun);color:#2b1505;border:none;font-size:1.1rem;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:all 0.3s;box-shadow:0 12px 32px rgba(255,138,61,0.35)}
+        .to-top.show{opacity:1;visibility:visible;transform:none}
+        .to-top:hover{background:#ffa468}
+        .mobile-cta-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:280;background:rgba(10,26,18,0.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:11px 18px calc(11px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform 0.3s ease;align-items:center;gap:14px}
+        .mobile-cta-bar.show{transform:none}
+        .mobile-cta-bar .bar-count{font-size:0.72rem;font-weight:600;color:var(--muted);line-height:1.4}
+        .mobile-cta-bar .btn{margin-left:auto;padding:11px 18px;font-size:0.7rem}
+
+        /* ---------- DRAWER ---------- */
+        .drawer{position:fixed;top:0;right:0;bottom:0;width:min(84vw,340px);background:var(--bg-deep);border-left:1px solid var(--line);z-index:300;transform:translateX(105%);transition:transform 0.32s ease,visibility 0.32s;display:flex;flex-direction:column;padding:92px 32px 40px;gap:4px;visibility:hidden}
+        .drawer.open{transform:none;visibility:visible}
+        .drawer a{font-family:var(--disp);font-weight:700;font-size:1.35rem;text-transform:uppercase;color:var(--cream);padding:12px 0;border-bottom:1px solid var(--line-soft);letter-spacing:0.5px}
+        .drawer a:hover{color:var(--sun)}
+        .drawer .btn{margin-top:20px;justify-content:center}
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width:1024px){
+          .v-grid{grid-template-columns:repeat(2,1fr)}
+          .story-row{grid-template-columns:1fr}
+          .stats-grid{grid-template-columns:repeat(2,1fr)}
+          .stat-cell:nth-child(odd){border-left:none}
+          .stat-cell:nth-child(n+3){border-top:1px solid var(--line)}
+          .signup-grid{grid-template-columns:1fr;gap:48px}
+          .help-grid{grid-template-columns:repeat(2,1fr)}
+          .footer-grid{grid-template-columns:1fr 1fr}
+          .hero-emblem{display:none}
+        }
+        @media (max-width:768px){
+          .nav-links,.nav-cta .btn{display:none}
+          .burger{display:flex}
+          .v-grid{grid-template-columns:1fr}
+          .stats-grid{grid-template-columns:1fr}
+          .stat-cell{border-left:none;border-top:1px solid var(--line);padding:36px 8px}
+          .stat-cell:first-child{border-top:none}
+          .help-grid{grid-template-columns:1fr}
+          .footer-grid{grid-template-columns:1fr}
+          .ribbon-msg{max-width:52vw}
+          .hero-inner{padding:76px 0 84px}
+          .sec{padding:72px 0}
+          .op-right{min-width:100%}
+          .clist-head{flex-wrap:wrap}
+          .clist-progress{min-width:100%}
+          .mobile-cta-bar{display:flex}
+          .toast-container{left:20px;right:20px;bottom:84px}
+          .hero-halo{opacity:0.6}
+        }
+        @media (min-width:769px){
+          .drawer{display:none}
+        }
+        @media (prefers-reduced-motion:reduce){
+          *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+          .reveal{opacity:1;transform:none}
+        }
+      `;
+      document.head.appendChild(__fwsCss);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- BLOOMBOARD RIBBON -->
+  <div class="ribbon" id="ribbon">
+    <div class="ribbon-inner">
+      <span class="ribbon-label"><span class="pulse-dot"></span> BloomBoard</span>
+      <div class="ribbon-msg" id="ribbon-msg">
+        <span data-fws-slot="calendar.update.1">WATERING WINDOW — 48hr of blue sky ahead, feed every third water this week</span>
+      </div>
+      <div class="ribbon-controls">
+        <span class="ribbon-time" id="ribbon-time">CANOPY 14:02:07</span>
+        <button class="ribbon-btn" id="ribbon-pause" aria-label="Pause garden feed" title="Pause">&#10074;&#10074;</button>
+        <button class="ribbon-btn" id="ribbon-close" aria-label="Dismiss BloomBoard" title="Dismiss">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo" aria-label="Parcy~Dice home">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V4"/><path d="M12 6c-3.5 0-6 3.2-6 7h12c0-3.8-2.5-7-6-7z"/><path d="M9 2h6"/></svg>
+        </span>
+        PARCY<em>~DICE</em>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#collection">The Collection</a></li>
+        <li><a href="#grit">Keep-Alive</a></li>
+        <li><a href="#checklists">Care Lists</a></li>
+        <li><a href="#help">Visit</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#join" class="btn btn-sun btn-sm">Join the Grove</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DRAWER -->
+  <nav class="drawer" id="drawer" aria-label="Mobile navigation">
+    <a href="#collection">The Collection</a>
+    <a href="#grit">Keep-Alive</a>
+    <a href="#checklists">Care Lists</a>
+    <a href="#help">Visit</a>
+    <a href="#join" class="btn btn-sun">Join the Grove</a>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-leafgrid" aria-hidden="true"></div>
+    <div class="hero-halo" aria-hidden="true"></div>
+    <div class="hero-halo soft" aria-hidden="true"></div>
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="0 0 150 170" fill="none" stroke-linecap="round">
+        <path d="M75 165 C66 124 70 88 78 40" stroke="#3f7a52" stroke-width="7"/>
+        <path d="M75 165 C86 124 82 88 78 40" stroke="#4f925f" stroke-width="7"/>
+        <path d="M75 165 C75 130 76 90 76 40" stroke="#2f613f" stroke-width="3"/>
+        <g class="tongue">
+          <path d="M70 34 C64 50 60 60 62 74 L72 60 Z" fill="#3a7bd5"/>
+          <path d="M82 34 C88 50 92 60 90 74 L80 60 Z" fill="#3a7bd5"/>
+        </g>
+        <g class="crown">
+          <ellipse cx="44" cy="30" rx="10" ry="38" fill="#ff8a3d" transform="rotate(-32 44 30)"/>
+          <ellipse cx="75" cy="18" rx="10" ry="42" fill="#ff9d57"/>
+          <ellipse cx="106" cy="30" rx="10" ry="38" fill="#ff8a3d" transform="rotate(32 106 30)"/>
+        </g>
+        <path d="M62 96 h26 l-4 12 h-18 Z" fill="#ffc24d"/>
+      </svg>
+    </div>
+    <div class="wrap hero-inner">
+      <div class="status-chip">
+        <span class="status-badge good">Blooming</span>
+        <span class="mono-text" id="status-text">SPRING BLOOM · ALL 4 VARIETIES FLOWERING</span>
+      </div>
+      <h1>THE BIRD<br>THAT <em>BLOOMS.</em></h1>
+      <p class="hero-sub" data-fws-slot="campaign.hero.description">Bird of Paradise is the houseplant that breaks hearts — gorgeous in the shop, wilting by Tuesday. Parcy~Dice teaches the one trick that keeps them flowering: rest in spring, patience the rest of the year.</p>
+      <div class="hero-actions">
+        <a href="#checklists" class="btn btn-sun">Open the Care Lists</a>
+        <a href="#collection" class="btn btn-ghost">Meet the Blooms</a>
+      </div>
+      <div class="hero-counter">
+        <span id="hero-count">1,204</span>&nbsp;families growing bird-of-paradise with us — be next.
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- COLLECTION -->
+    <section id="collection" class="sec">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">The greenhouse</span>
+          <h2>MEET THE <em>BLOOMS</em></h2>
+          <p data-fws-slot="collection.description">Four varieties, one plant family. Pick the Bird of Paradise that fits your light, your patience, and your windowsill.</p>
+        </div>
+
+        <div class="v-grid">
+          <article class="vcard reveal" style="--vc:var(--sun);--vcd:var(--sun-dim);">
+            <div class="v-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="8" cy="9" rx="3" ry="9" transform="rotate(-32 8 9)"/><ellipse cx="12" cy="5" rx="3" ry="10"/><ellipse cx="16" cy="9" rx="3" ry="9" transform="rotate(32 16 9)"/><path d="M9 18h6"/></svg>
+            </div>
+            <span class="v-tag gold">Garden fave</span>
+            <h3 class="v-name" data-fws-slot="bloom.1.title">Strelitzia reginae</h3>
+            <span class="v-meta"><span>BLOOM <b>Autumn–Spring</b></span><span>CARE <b>Easy</b></span></span>
+            <p class="v-desc" data-fws-slot="bloom.1.desc">The classic orange bird — orange crown, blue tongue, thrives in bright sun. Flowers twice a year if you give it a dry rest in spring.</p>
+            <a href="#checklists" class="link">Care notes →</a>
+          </article>
+
+          <article class="vcard reveal" style="--vc:var(--gold);--vcd:var(--gold-dim);">
+            <div class="v-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v16"/><path d="M12 14c-5 0-8-3-8-7"/><path d="M12 14c5 0 8-3 8-7"/></svg>
+            </div>
+            <span class="v-tag leaf">Tall grow</span>
+            <h3 class="v-name" data-fws-slot="bloom.2.title">Strelitzia nicolai</h3>
+            <span class="v-meta"><span>BLOOM <b>Year-round</b></span><span>CARE <b>Regular</b></span></span>
+            <p class="v-desc" data-fws-slot="bloom.2.desc">The giant white bird. Reaches 30 ft outdoors and grows a whole forest indoors; it asks for a tall, sunny room and steady patience.</p>
+            <a href="#checklists" class="link">Care notes →</a>
+          </article>
+
+          <article class="vcard reveal" style="--vc:var(--bloom);--vcd:var(--bloom-dim);">
+            <div class="v-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 20V8"/><path d="M9 20V4"/><path d="M12 20V6"/><path d="M15 20V9"/><path d="M10.5 6l3-2 3 2-1.5 4h-3z"/></svg>
+            </div>
+            <span class="v-tag sun">Drought-hardy</span>
+            <h3 class="v-name" data-fws-slot="bloom.3.title">Strelitzia juncea</h3>
+            <span class="v-meta"><span>BLOOM <b>Autumn–Spring</b></span><span>CARE <b>Easy</b></span></span>
+            <p class="v-desc" data-fws-slot="bloom.3.desc">The rush-leaf bird. No wide leaves — just tall reeds that flower from the crown. The variety that forgives forgetful watering.</p>
+            <a href="#checklists" class="link">Care notes →</a>
+          </article>
+
+          <article class="vcard reveal" style="--vc:var(--gold);--vcd:var(--gold-dim);">
+            <div class="v-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="7" cy="10" rx="3" ry="8" transform="rotate(-30 7 10)"/><ellipse cx="11" cy="6" rx="3" ry="9"/><ellipse cx="15" cy="10" rx="3" ry="8" transform="rotate(30 15 10)"/><circle cx="12" cy="5" r="1.5" fill="currentColor"/></svg>
+            </div>
+            <span class="v-tag bloom">Collectible</span>
+            <h3 class="v-name" data-fws-slot="bloom.4.title">Mandela's Gold</h3>
+            <span class="v-meta"><span>BLOOM <b>Spring</b></span><span>CARE <b>Expert</b></span></span>
+            <p class="v-desc" data-fws-slot="bloom.4.desc">A rare yellow cultivar from South Africa. Slow, fussy, and unforgettable — the trophy for collectors with a greenhouse.</p>
+            <a href="#checklists" class="link">Care notes →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY STRIP -->
+    <section id="grit" class="sec story-strip">
+      <div class="wrap">
+        <div class="story-row reveal">
+          <div class="story-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M5 21h14"/><path d="M12 21C6 21 4 15 4 9c3 0 5-1 8-4 3 3 5 4 8 4 0 6-2 12-8 12z"/></svg>
+          </div>
+          <div>
+            <h3>SOIL <span>FIRST.</span></h3>
+            <p>Bird of Paradise is a feeding plant. We mix in slow-release feed at repotting, top-dress every growing season, and water to the root, not the leaf. Feed the dirt and the blooms follow.</p>
+          </div>
+        </div>
+        <div class="story-row reveal">
+          <div class="story-ico gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M22 12h-3"/><path d="M5 12H2"/></svg>
+          </div>
+          <div>
+            <h3>SUN <span>MATH.</span></h3>
+            <p>Full morning sun, filtered afternoon light. Six hours of direct sun builds flower buds; afternoon baking fries them. If your leaves bleach, count the hours your window actually gives.</p>
+          </div>
+        </div>
+        <div class="story-row reveal">
+          <div class="story-ico bloom">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M4 5l10-1v7L4 8"/><path d="M14 11l6-2v6l-6 2z"/></svg>
+          </div>
+          <div>
+            <h3>SLOW IS <span>FAST.</span></h3>
+            <p>The honest truth: a young Strelitzia can take 3–5 years to flower. The trick is the spring dry rest — six weeks of drought sets the buds. Boredom, then bloom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="sec stats-band">
+      <div class="wrap">
+        <div class="stat-cell-wrap" style="display:grid;grid-template-columns:repeat(4,1fr);">
+          <div class="stat-cell reveal">
+            <div class="stat-num"><span class="count" data-count="5">0</span></div>
+            <p class="stat-label" data-fws-slot="fact.1.label">Bird of Paradise varieties in the living collection</p>
+          </div>
+          <div class="stat-cell reveal">
+            <div class="stat-num"><span class="count" data-count="1204">0</span></div>
+            <p class="stat-label" data-fws-slot="fact.2.label">households growing one with our care lists</p>
+          </div>
+          <div class="stat-cell reveal">
+            <div class="stat-num"><span class="count" data-count="38">0</span></div>
+            <p class="stat-label" data-fws-slot="fact.3.label">volunteer grove keepers on watering rounds</p>
+          </div>
+          <div class="stat-cell reveal">
+            <div class="stat-num"><span class="count" data-count="92">0</span><span class="stat-unit">%</span></div>
+            <p class="stat-label" data-fws-slot="fact.4.label">spring bloom success for grove members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLISTS -->
+    <section id="checklists" class="sec">
+      <div class="wrap">
+        <div class="sec-head mid reveal">
+          <span class="kicker">Get gritty tonight</span>
+          <h2>THE <span class="accent-gold">KEEP-ALIVE</span> LISTS</h2>
+          <p>Check items off as you finish them. Progress saves on this device — come back tomorrow and pick up where you left off.</p>
+        </div>
+
+        <div class="checklists">
+          <div class="overall-progress reveal">
+            <div class="op-left">
+              <h3>Self-care for the collection</h3>
+              <p>ALL LISTS · SAVED ON THIS DEVICE</p>
+            </div>
+            <div class="op-right">
+              <div class="op-bar"><div class="op-fill" id="op-fill"></div></div>
+              <span class="op-pct" id="op-pct">0%</span>
+              <button class="op-reset" id="op-reset" type="button">Reset</button>
+            </div>
+          </div>
+
+          <div class="clist open" data-clist="new">
+            <button class="clist-head" aria-expanded="true">
+              <span class="clist-num">01</span>
+              <span class="clist-titles"><h3 data-fws-slot="checklist.1.title">New Arrival Routine</h3></span>
+              <span class="clist-progress"><span class="clist-bar"><span class="clist-fill" data-fill></span></span><span class="clist-pct" data-pct>0/12</span></span>
+              <span class="clist-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <div class="clist-body" style="max-height:600px;">
+              <div class="clist-items">
+                <label class="clist-item"><input type="checkbox" data-item="Pot with drainage holes ready before repotting"><span>Pot with drainage holes ready before repotting</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="All-purpose mix + perlite on hand"><span>All-purpose mix + perlite on hand</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Water the rootball 24h before repotting"><span>Water the rootball 24h before repotting</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Pot 2-3 in wider than the old rootball"><span>Pot 2-3 in wider than the old rootball</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Loosen matted roots before planting"><span>Loosen matted roots before planting</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Crown sits at soil line — never buried"><span>Crown sits at soil line — never buried</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Bright spot, out of direct afternoon sun"><span>Bright spot, out of direct afternoon sun</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="No fertilizer for the first four weeks"><span>No fertilizer for the first four weeks</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Water only when top 2 in of soil is dry"><span>Water only when top 2 in of soil is dry</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="7 days quarantine from the collection"><span>7 days quarantine from the collection</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Log the repotting date"><span>Log the repotting date</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Stake tall leaves until roots settle"><span>Stake tall leaves until roots settle</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="clist" data-clist="water">
+            <button class="clist-head" aria-expanded="false">
+              <span class="clist-num">02</span>
+              <span class="clist-titles"><h3 data-fws-slot="checklist.2.title">Weekly Water &amp; Feed</h3></span>
+              <span class="clist-progress"><span class="clist-bar"><span class="clist-fill" data-fill></span></span><span class="clist-pct" data-pct>0/8</span></span>
+              <span class="clist-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <div class="clist-body">
+              <div class="clist-items">
+                <label class="clist-item"><input type="checkbox" data-item="Lift-test: a dry pot feels light"><span>Lift-test: a dry pot feels light</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Top 2 in bone-dry? Water. Damp? Wait a day"><span>Top 2 in bone-dry? Water. Damp? Wait a day</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Room-temperature water, not cold tap"><span>Room-temperature water, not cold tap</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Water till it drains, then empty the saucer"><span>Water till it drains, then empty the saucer</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Feed balanced liquid every third watering"><span>Feed balanced liquid every third watering</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Monthly soak to flush salt build-up"><span>Monthly soak to flush salt build-up</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Quarter-turn the pot each week"><span>Quarter-turn the pot each week</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Wipe leaves to keep pores open"><span>Wipe leaves to keep pores open</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="clist" data-clist="bloom">
+            <button class="clist-head" aria-expanded="false">
+              <span class="clist-num">03</span>
+              <span class="clist-titles"><h3 data-fws-slot="checklist.3.title">Monthly Bloom Care</h3></span>
+              <span class="clist-progress"><span class="clist-bar"><span class="clist-fill" data-fill></span></span><span class="clist-pct" data-pct>0/8</span></span>
+              <span class="clist-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <div class="clist-body">
+              <div class="clist-items">
+                <label class="clist-item"><input type="checkbox" data-item="Repot at most every two years"><span>Repot at most every two years</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Divide crowded rhizomes to make new plants"><span>Divide crowded rhizomes to make new plants</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Cut spent flower stalks at the base"><span>Cut spent flower stalks at the base</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Scan leaf undersides for scale and thrips"><span>Scan leaf undersides for scale and thrips</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Boost feed Oct–Feb to set buds"><span>Boost feed Oct–Feb to set buds</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="6-week dry rest in spring before blooming"><span>6-week dry rest in spring before blooming</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Brightest window after the rest"><span>Brightest window after the rest</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Groom withered bracts so new buds show"><span>Groom withered bracts so new buds show</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="clist" data-clist="season">
+            <button class="clist-head" aria-expanded="false">
+              <span class="clist-num">04</span>
+              <span class="clist-titles"><h3 data-fws-slot="checklist.4.title">Seasonal &amp; Safety</h3></span>
+              <span class="clist-progress"><span class="clist-bar"><span class="clist-fill" data-fill></span></span><span class="clist-pct" data-pct>0/6</span></span>
+              <span class="clist-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <div class="clist-body">
+              <div class="clist-items">
+                <label class="clist-item"><input type="checkbox" data-item="Bring potted plants in before first frost"><span>Bring potted plants in before first frost</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Clear drained trays standing after heavy rain"><span>Clear drained trays standing after heavy rain</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Tie tall flower stalks before gusty days"><span>Tie tall flower stalks before gusty days</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Keep plants out of reach of pets and kids"><span>Keep plants out of reach of pets and kids</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Cool, low-light room for winter rest"><span>Cool, low-light room for winter rest</span></label>
+                <label class="clist-item"><input type="checkbox" data-item="Set a dormant-season watering reminder"><span>Set a dormant-season watering reminder</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN THE GROVE -->
+    <section id="join" class="sec signup">
+      <div class="wrap signup-grid">
+        <div class="signup-copy reveal">
+          <span class="kicker">The grove</span>
+          <h2>JOIN THE<br><span class="row">GROVE — <em>NEVER WILT ALONE.</em></span></h2>
+          <p data-fws-slot="signup.description">Tell us your growing spot and how you like to be reminded. We'll send a short watering window when it matters — the dry-rest reminder in spring, and a bloom alert when your bird is about to go off. No plant spam, ever.</p>
+
+          <div class="social-proof">
+            <div class="avatar-stack">
+              <span class="s-avatar" style="background:#ff8a3d;">AD</span>
+              <span class="s-avatar" style="background:#ffc24d;">MK</span>
+              <span class="s-avatar" style="background:#7fd08a;">JT</span>
+              <span class="s-avatar" style="background:#3a7bd5;">SR</span>
+              <span class="s-avatar" style="background:#a9b8a2;">LP</span>
+            </div>
+            <span class="proof-text"><b id="social-count">1,204</b> families in the grove already. Bring your bird.</span>
+          </div>
+
+          <div class="channel-row">
+            <span class="channel-pill">WATER REMINDERS</span>
+            <span class="channel-pill">BLOOM ALERTS</span>
+            <span class="channel-pill">DRY-REST NUDGES</span>
+            <span class="channel-pill" style="border-color:rgba(127,208,138,0.4);color:var(--leaf);">NO SPAM</span>
+          </div>
+        </div>
+
+        <div class="signup-panel reveal">
+          <form id="signup-form" novalidate>
+            <h3 class="panel-title" data-fws-slot="signup.title">JOIN THE GROVE</h3>
+            <p class="panel-sub">Free. Two short notes a month. Opt out anytime with one tap.</p>
+
+            <div class="form-alert" id="form-alert" role="alert"></div>
+
+            <div class="field" id="field-email">
+              <label for="alt-email">Email address</label>
+              <input type="email" id="alt-email" placeholder="you@example.com" autocomplete="email">
+              <span class="field-error" id="email-error">Enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="alt-zone">Your growing spot</label>
+              <select id="alt-zone">
+                <option value="">Pick your spot…</option>
+                <option>Bright windowsill</option>
+                <option>Sunny garden bed</option>
+                <option>Shaded patio</option>
+                <option>Greenhouse collection</option>
+              </select>
+            </div>
+            <div class="channels" id="channels">
+              <label class="chan"><input type="checkbox" id="chan-sms" checked><span>SMS</span></label>
+              <label class="chan"><input type="checkbox" id="chan-email" checked><span>Email</span></label>
+              <label class="chan"><input type="checkbox" id="chan-wa"><span>WhatsApp</span></label>
+            </div>
+            <button type="submit" class="btn btn-sun submit-btn" id="submit-btn">Join the Grove</button>
+          </form>
+
+          <div class="signup-success" id="signup-success">
+            <div class="success-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>YOU'RE GROWING.</h3>
+            <p>Watering windows armed for your spot. Confirm your number to switch on SMS reminders.</p>
+            <div class="success-zone" id="success-zone">SPOT: <b>NOT SET</b> · CHANNELS: EMAIL</div>
+            <p style="font-size:0.82rem;">You are family #<b id="success-num" style="color:var(--sun);">1,205</b>. A welcome email is on its way.</p>
+            <button type="button" class="reset-link" id="reset-form">Join with another plant</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HELPLINES -->
+    <section id="help" class="sec">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">When it's wilting</span>
+          <h2>HELP IS <em>ONE NOTE AWAY</em></h2>
+          <p>No question too small — a yellow leaf is the start of a story, not the end of one.</p>
+        </div>
+        <div class="help-grid">
+          <div class="help-card reveal">
+            <span class="help-kind">Care consult</span>
+            <div class="help-num">1-800-GROW-HELP</div>
+            <h3 style="font-family:var(--disp);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.3px;" data-fws-slot="help.1.title">Spot a thirsty plant?</h3>
+            <p data-fws-slot="help.1.desc">Send a photo of any wilting Strelitzia — a grove volunteer talks you through the rescue step by step.</p>
+          </div>
+          <div class="help-card reveal">
+            <span class="help-kind">Plant trade</span>
+            <div class="help-num">1-800-NO-CUT</div>
+            <h3 style="font-family:var(--disp);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.3px;" data-fws-slot="help.2.title">Report a stolen cutting</h3>
+            <p data-fws-slot="help.2.desc">Tip line for wild Strelitzia poaching. Photos help; your number stays private and the matter stays out of court.</p>
+          </div>
+          <div class="help-card reveal">
+            <span class="help-kind">Volunteers</span>
+            <div class="help-num">GROVE-TEAM</div>
+            <h3 style="font-family:var(--disp);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.3px;" data-fws-slot="help.3.title">Join the Grove team</h3>
+            <p data-fws-slot="help.3.desc">Watering rounds, school visits, bloom-day hosting. One shift a month keeps the whole grove green.</p>
+          </div>
+        </div>
+
+        <div class="share-band reveal">
+          <span class="kicker" style="justify-content:center;">Share with your neighbors</span>
+          <h2 style="font-family:var(--disp);font-weight:700;font-size:1.4rem;text-transform:uppercase;">PASS ON A CUTTING</h2>
+          <p style="margin-top:8px;color:var(--muted);font-size:0.9rem;">A rooted cutting and one honest tip is all it takes to start a grove.</p>
+          <div class="share-btns">
+            <button class="share-btn solid" id="copy-link" type="button">&#128279; Copy link</button>
+            <a class="share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=The%20bird%20that%20blooms.%20Keep%20your%20Bird%20of%20Paradise%20alive%20with%20Parcy~Dice.&amp;url=https%3A%2F%2Fparcydice.example.org">Share on X</a>
+            <a class="share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparcydice.example.org">Facebook</a>
+            <a class="share-btn" target="_blank" rel="noopener" href="https://wa.me/?text=The%20bird%20that%20blooms.%20Keep%20your%20Bird%20of%20Paradise%20alive%3A%20https%3A%2F%2Fparcydice.example.org">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark" style="width:32px;height:32px;border-radius:9px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;stroke:#06130c;"><path d="M12 21V4"/><path d="M12 6c-3.5 0-6 3.2-6 7h12c0-3.8-2.5-7-6-7z"/><path d="M9 2h6"/></svg>
+          </span>
+          PARCY<em>~DICE</em>
+        </a>
+        <p data-fws-slot="about.body">Parcy~Dice is a community garden for the Bird of Paradise flower. We keep a living collection of Strelitzia, teach the dry-rest trick that sets blooms, and remind you when your plant is thirsty.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Garden</h4>
+        <a href="#collection">The Collection</a>
+        <a href="#grit">Keep-Alive Rules</a>
+        <a href="#checklists">Care Lists</a>
+        <a href="#join">Join the Grove</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#" data-fws-slot="contact.email">hi@parcydice.example.org</a>
+        <a href="#" data-fws-slot="contact.phone">1-800-GROW-HELP</a>
+        <a href="#">Press &amp; partners</a>
+        <a href="#">Volunteer handbook</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span data-fws-slot="business.copyright">&copy; 2026 Parcy~Dice Bird of Paradise Garden. Grow gently.</span>
+      <span class="byline" data-fws-slot="fws.byline">Template by Aa11rn &middot; made with FreeWebStore</span>
+    </div>
+    <div class="wrap footer-disclaimer" data-fws-slot="campaign.disclaimer">Demo template: variety data, grower counts, and helpline numbers are illustrative. Real plants need real light — follow a professional's advice for your zone.</div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">&#9650;</button>
+
+  <!-- MOBILE CTA -->
+  <div class="mobile-cta-bar" id="mobile-cta">
+    <div class="bar-count"><b id="bar-num" style="color:var(--gold);">1,204</b> grove families. Be next.</div>
+    <a href="#join" class="btn btn-sun">Join the Grove</a>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script>
+    window.tailwind = window.tailwind || {};
+
+    /* ============================================================
+       HELPERS
+       ============================================================ */
+    function $(id) { return document.getElementById(id); }
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function toast(msg) {
+      var box = $('toast-container');
+      var el = document.createElement('div');
+      el.className = 'toast';
+      el.textContent = msg;
+      box.appendChild(el);
+      setTimeout(function () {
+        el.style.transition = 'opacity 0.3s';
+        el.style.opacity = '0';
+        setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 320);
+      }, 2600);
+    }
+    var store = {
+      get: function (k, f) { try { var v = localStorage.getItem(k); return v === null ? f : v; } catch (e) { return f; } },
+      set: function (k, v) { try { localStorage.setItem(k, String(v)); } catch (e) {} },
+      getJSON: function (k, f) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : f; } catch (e) { return f; } },
+      setJSON: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+    };
+    function fmt(n) { return n.toLocaleString('en-US'); }
+
+    /* ============================================================
+       GROWER COUNTER (persisted)
+       ============================================================ */
+    var BASE_GROWERS = 1204;
+    var growerCount = parseInt(store.get('pcd-growers', BASE_GROWERS), 10);
+    var growerEmails = store.getJSON('pcd-emails', []);
+
+    function renderGrowers() {
+      var ids = ['hero-count', 'social-count', 'bar-num'];
+      ids.forEach(function (id) {
+        var el = $(id);
+        if (el) el.textContent = fmt(growerCount);
+      });
+    }
+    renderGrowers();
+
+    /* ============================================================
+       BLOOMBOARD RIBBON
+       ============================================================ */
+    var feedItems = [
+      '<span data-fws-slot="calendar.update.1">WATERING WINDOW — 48hr of blue sky ahead, feed every third water this week</span>',
+      '<span data-fws-slot="calendar.update.2">BLOOM UPDATE — 3 reginae crowns opened overnight in the collection</span>',
+      '<span data-fws-slot="calendar.update.3">FROST WATCH — bring potted Strelitzia indoors before Tuesday&rsquo;s cold snap</span>',
+      '<span data-fws-slot="calendar.update.4">VOLUNTEER DAYS — Saturday watering rounds, sign up in the Grove section</span>'
+    ];
+    var fdIndex = 0, fdPaused = false, fdTimer = null;
+    var fdMsg = $('ribbon-msg');
+    function fdTick() {
+      if (fdPaused) return;
+      fdIndex = (fdIndex + 1) % feedItems.length;
+      fdMsg.innerHTML = feedItems[fdIndex];
+    }
+    fdTimer = setInterval(fdTick, reduceMotion ? 6000 : 3800);
+
+    $('ribbon-pause').addEventListener('click', function () {
+      fdPaused = !fdPaused;
+      this.innerHTML = fdPaused ? '&#9654;' : '&#10074;&#10074;';
+      this.setAttribute('aria-label', fdPaused ? 'Resume garden feed' : 'Pause garden feed');
+      toast(fdPaused ? 'Feed paused' : 'Feed resumed');
+    });
+    $('ribbon-close').addEventListener('click', function () {
+      $('ribbon').style.display = 'none';
+    });
+
+    (function clock() {
+      var el = $('ribbon-time');
+      var tick = function () {
+        var d = new Date(), p = function (n) { return (n < 10 ? '0' : '') + n; };
+        el.textContent = 'CANOPY ' + p(d.getUTCHours()) + ':' + p(d.getUTCMinutes()) + ':' + p(d.getUTCSeconds());
+      };
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    /* ============================================================
+       MOBILE DRAWER
+       ============================================================ */
+    var burger = $('burger'), drawer = $('drawer'), overlay = $('overlay');
+    function setDrawer(open) {
+      drawer.classList.toggle('open', open);
+      overlay.classList.toggle('show', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    burger.addEventListener('click', function () { setDrawer(!drawer.classList.contains('open')); });
+    overlay.addEventListener('click', function () { setDrawer(false); });
+    drawer.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setDrawer(false); });
+    });
+
+    /* ============================================================
+       SCROLL REVEALS
+       ============================================================ */
+    (function initReveals() {
+      var els = document.querySelectorAll('.reveal');
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.14 });
+      els.forEach(function (el, i) { el.style.transitionDelay = ((i % 4) * 70) + 'ms'; io.observe(el); });
+    })();
+
+    /* ============================================================
+       COUNT-UP STATS
+       ============================================================ */
+    (function initCountUp() {
+      var nums = document.querySelectorAll('.count');
+      function animate(el) {
+        var target = parseInt(el.getAttribute('data-count'), 10);
+        if (reduceMotion) { el.textContent = fmt(target); return; }
+        var dur = 1400, t0 = null;
+        function tick(t) {
+          if (!t0) t0 = t;
+          var p = Math.min(1, (t - t0) / dur);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased).toLocaleString('en-US');
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+      if (!('IntersectionObserver' in window)) { nums.forEach(function (el) { el.textContent = el.getAttribute('data-count'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { animate(entry.target); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.5 });
+      nums.forEach(function (el) { io.observe(el); });
+    })();
+
+    /* ============================================================
+       CHECKLISTS (persisted)
+       ============================================================ */
+    var checklistData = {};
+    function loadChecklists() {
+      var saved = store.getJSON('pcd-checklist', {});
+      document.querySelectorAll('.clist').forEach(function (cl) {
+        var id = cl.getAttribute('data-clist');
+        checklistData[id] = saved[id] || [];
+        cl.querySelectorAll('.clist-item input').forEach(function (box) {
+          box.checked = checklistData[id].indexOf(box.getAttribute('data-item')) !== -1;
+        });
+      });
+    }
+    function saveChecklists() {
+      store.setJSON('pcd-checklist', checklistData);
+      updateAll();
+    }
+    function updateList(id) {
+      var cl = document.querySelector('.clist[data-clist="' + id + '"]');
+      var boxes = cl.querySelectorAll('.clist-item input');
+      var done = cl.querySelectorAll('.clist-item input:checked').length;
+      var total = boxes.length;
+      cl.querySelector('[data-fill]').style.width = (done / total) * 100 + '%';
+      cl.querySelector('[data-pct]').textContent = done + '/' + total;
+    }
+    function updateAll() {
+      document.querySelectorAll('.clist').forEach(function (cl) {
+        updateList(cl.getAttribute('data-clist'));
+      });
+      var tot = 0, done = 0;
+      document.querySelectorAll('.clist').forEach(function (cl) {
+        var boxes = cl.querySelectorAll('.clist-item input');
+        tot += boxes.length;
+        done += cl.querySelectorAll('.clist-item input:checked').length;
+      });
+      var pct = tot ? Math.round((done / tot) * 100) : 0;
+      $('op-fill').style.width = pct + '%';
+      $('op-pct').textContent = pct + '%';
+    }
+
+    document.querySelectorAll('.clist').forEach(function (cl) {
+      var id = cl.getAttribute('data-clist');
+      var head = cl.querySelector('.clist-head');
+      head.addEventListener('click', function () {
+        var open = cl.classList.toggle('open');
+        var body = cl.querySelector('.clist-body');
+        head.setAttribute('aria-expanded', open ? 'true' : 'false');
+        body.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
+      });
+      cl.querySelectorAll('.clist-item input').forEach(function (box) {
+        box.addEventListener('change', function () {
+          var val = box.getAttribute('data-item');
+          var arr = checklistData[id];
+          var idx = arr.indexOf(val);
+          if (box.checked && idx === -1) arr.push(val);
+          if (!box.checked && idx !== -1) arr.splice(idx, 1);
+          saveChecklists();
+        });
+      });
+    });
+    loadChecklists();
+    updateAll();
+
+    $('op-reset').addEventListener('click', function () {
+      document.querySelectorAll('.clist-item input').forEach(function (box) { box.checked = false; });
+      checklistData = {};
+      saveChecklists();
+      toast('Checklists reset — fresh leaves.');
+    });
+
+    /* ============================================================
+       JOIN THE GROVE FORM
+       ============================================================ */
+    var form = $('signup-form');
+    var submitBtn = $('submit-btn');
+    var alertBox = $('form-alert');
+
+    function showAlert(msg) { alertBox.textContent = msg; alertBox.classList.add('show'); }
+    function clearAlert() { alertBox.classList.remove('show'); }
+
+    function validateEmail() {
+      var field = $('field-email');
+      var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('alt-email').value.trim());
+      field.classList.toggle('invalid', !ok);
+      $('alt-email').setAttribute('aria-invalid', ok ? 'false' : 'true');
+      return ok;
+    }
+    $('alt-email').addEventListener('input', function () {
+      var field = $('field-email');
+      if (field.classList.contains('invalid')) {
+        if (!$('email-error').dataset.dup && validateEmail()) field.classList.remove('invalid');
+      }
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearAlert();
+      if (!validateEmail()) { showAlert('Enter a valid email to join the grove.'); return; }
+
+      var email = $('alt-email').value.trim().toLowerCase();
+      if (growerEmails.indexOf(email) !== -1) {
+        $('email-error').textContent = 'This email already enjoys watering reminders.';
+        $('email-error').dataset.dup = '1';
+        $('field-email').classList.add('invalid');
+        showAlert('You&rsquo;re already in the grove — lovely to have you.');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span> Planting you in…';
+
+      setTimeout(function () {
+        growerEmails.push(email);
+        store.setJSON('pcd-emails', growerEmails);
+        growerCount += 1;
+        store.set('pcd-growers', growerCount);
+        renderGrowers();
+
+        var spot = $('alt-zone').value || 'SPOT NOT SET';
+        $('success-zone').innerHTML = 'SPOT: <b>' + spot + '</b> · CHANNELS: ' + channelsText();
+        $('success-num').textContent = fmt(growerCount);
+
+        form.style.display = 'none';
+        $('signup-success').classList.add('show');
+        toast('Welcome to the grove — watering windows on.');
+      }, reduceMotion ? 150 : 1200);
+    });
+
+    function channelsText() {
+      var out = [];
+      if ($('chan-sms').checked) out.push('SMS');
+      if ($('chan-email').checked) out.push('EMAIL');
+      if ($('chan-wa').checked) out.push('WHATSAPP');
+      return out.length ? out.join(' · ') : 'NONE';
+    }
+
+    $('reset-form').addEventListener('click', function () {
+      var errEl = $('email-error');
+      delete errEl.dataset.dup;
+      errEl.textContent = 'Enter a valid email address.';
+      $('alt-email').value = '';
+      $('field-email').classList.remove('invalid');
+      $('signup-success').classList.remove('show');
+      form.style.display = '';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Join the Grove';
+      $('alt-email').focus();
+    });
+
+    /* ============================================================
+       SHARE
+       ============================================================ */
+    $('copy-link').addEventListener('click', function () {
+      var url = 'https://parcydice.example.org';
+      function ok() { toast('Link copied — pass a cutting along.'); }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        document.body.appendChild(ta);
+        try { ta.select(); document.execCommand('copy'); ok(); } catch (err) { toast(url); }
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(ok, fallback);
+      } else { fallback(); }
+    });
+
+    /* ============================================================
+       BACK TO TOP + MOBILE CTA BAR
+       ============================================================ */
+    var toTop = $('to-top');
+    var ctaBar = $('mobile-cta');
+    var signupSection = $('join');
+    var signupVisible = false;
+    var pastHero = false;
+
+    if ('IntersectionObserver' in window) {
+      var sigIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) { signupVisible = entry.isIntersecting; });
+        updateCta();
+      }, { threshold: 0.08 });
+      sigIO.observe(signupSection);
+    } else { signupVisible = true; }
+
+    function updateCta() {
+      ctaBar.classList.toggle('show', pastHero && !signupVisible);
+    }
+    window.addEventListener('scroll', function () {
+      pastHero = window.scrollY > 440;
+      toTop.classList.toggle('show', window.scrollY > 720);
+      updateCta();
+    }, { passive: true });
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var id = link.getAttribute('href');
+        if (id.length <= 1) return;
+        var target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+        history.replaceState(null, '', id);
+      });
+    });
+  </script>
+</body>
+
+</html>
